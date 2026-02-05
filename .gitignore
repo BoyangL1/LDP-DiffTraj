@@ -53,7 +53,7 @@ log/
 
 # Figures
 *.pdf
-*.png
+# *.png
 *.jpg
 *.jpeg
 *.svg
