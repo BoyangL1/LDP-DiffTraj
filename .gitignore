@@ -1,0 +1,97 @@
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.env
+.venv
+venv/
+env/
+ENV/
+
+# ===============================
+# Jupyter
+# ===============================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ===============================
+# PyTorch / ML
+# ===============================
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# ===============================
+# Data files (usually large)
+# ===============================
+data/
+data_privacy/
+*.parquet
+*.csv
+*.npy
+*.npz
+*.arrow
+*.pkl
+
+# ===============================
+# Generated results / outputs
+# ===============================
+result/
+results/
+outputs/
+logs/
+log/
+*.log
+
+# Figures
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# ===============================
+# OS / Editor
+# ===============================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ===============================
+# Temporary files
+# ===============================
+*.tmp
+*.bak
+*.cache
+
+# ===============================
+# Conda
+# ===============================
+.conda/
+conda-meta/
+
+# ===============================
+# ModelScope / HuggingFace cache
+# ===============================
+.cache/
+.huggingface/
+modelscope/
+
+# ===============================
+# Zip / archive
+# ===============================
+*.zip
+*.tar
+*.tar.gz
+*.tgz

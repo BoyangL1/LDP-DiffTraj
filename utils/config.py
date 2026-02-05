@@ -1,0 +1,46 @@
+args = {
+    'data': {
+        'dataset': 'YJ100',
+        'traj_path': '/xxx/ldp-traj/data_privacy/noise_sweep/noise_1.00/traj.npy',
+        'head_path': '/xxx/ldp-traj/data_privacy/noise_sweep/noise_1.00/traj_features.npy',
+        'head_dim': 8,
+        'traj_length': 20,
+        'channels': 2,
+        'uniform_dequantization': False,
+        'gaussian_dequantization': False,
+        'num_workers': True,
+    },
+    'model': {
+        'type': "simple",
+        'attr_dim': 8,
+        'guidance_scale': 3,
+        'in_channels': 2,
+        'out_ch': 2,
+        'ch': 128,
+        'ch_mult': [1, 2, 2, 2],
+        'num_res_blocks': 3,
+        'attn_resolutions': [25],
+        'dropout': 0.1,
+        'var_type': 'fixedlarge',
+        'ema_rate': 0.9999,
+        'ema': True,
+        'resamp_with_conv': True,
+    },
+    'diffusion': {
+        'beta_schedule': 'linear',
+        'beta_start': 0.0001,
+        'beta_end': 0.01,
+        'num_diffusion_timesteps': 1000,
+    },
+    'training': {
+        'batch_size': 128,
+        'n_epochs': 1000,
+        'n_iters': 5000000,
+        'snapshot_freq': 5000,
+        'validation_freq': 2000,
+    },
+    'sampling': {
+        'batch_size': 64,
+        'last_only': True,
+    }
+}
